@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Shop</title>
+  <link rel="stylesheet" href="css/styles1.css">
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <div>
+        <img src="images/logo1.png" alt="" class="logo">
+      </div>
+      <div class="image-with-circle r">
+        <img src="images/bolsa1.png" alt="hola" class="car">
+      </div>
+    </nav>
+    <div class="circle2 r2"><div class="arrow"></div></div>
+    <div class="pc"><div class="circle3"><p class="IS">Iniciar Sesión</p></div></div>
+    <div class="asesino">
+      <div class="ddmenu">
+        <a href="##">1</a>
+        <a href="###">2</a>
+        <a href="####">3</a>
+      </div>
+    </div>
+    <div class="asesino2">
+      <div class="ddcar">
+        <div id="cart-items"></div>
+        <button id="buy-btn" class="buy-btn">Comprar</button>
+      </div>
+    </div>
+  </header>
+  <section class="content">
+    <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>¿Confirmar compra?</p>
+          <button id="confirm-btn" class="bb">Sí</button>
+          <button id="cancel-btn" class="bb">No</button>
+      </div>
+    </div>
+    <div id="modal-login" class="modal">
+      <div class="modal-content">
+        <h2 class="tf">Iniciar Sesión</h2>
+        <span class="close">&times;</span>
+        <form id="login-form">
+          <input type="text" id="username" class="infor" placeholder="Nombre" name="username" required>
+          <input type="password" id="password" class="infor" placeholder="Contraseña" name="password" required>
+          <button class="bb" type="submit">Iniciar Sesión</button>
+          <br><br>
+          <p>No tienes una cuenta? <a href="#" id="to-register">Registrarme</a></p>
+        </form>
+      </div>
+    </div>
+    <div id="modal-register" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close">&times;</span>
+        <h2>Registrarse</h2>
+        <br>
+        <form id="register-form">
+          <input type="text" id="name" class="infor" placeholder="Nombre" required>
+          <input type="text" id="lastname" class="infor" placeholder="Apellido" required>
+          <input type="hidden" id="direction" class="infor" placeholder="Direccion" required>
+          <input type="text" id="username" class="infor" placeholder="Usuario" required>
+          <input type="password" class="infor" id="password" placeholder="Contraseña" required>
+          <button class="bb2" type="submit">Registrarse</button>
+          <br><br>
+          <p>Ya tienes una cuenta? <a href="#" id="to-login">Iniciar Sesión</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="bien" style="justify-items: center; text-align: center; align-items: center;">
+      <p style="font-size: 60px;font-weight: 600;">Bienvenido usuari@</p><p style="font-size: 20px;font-weight: lighter;">Estas en <b>Binary Shop</b>, esperamos disfrutes tu experiencia con nosotros.</p><br><p style="font-size: 20px;font-weight: lighter;">Pulsa <b>Iniciar Sesión</b> para comenzar.</p>
+    </div>
+    <div class="container_tarjet seller">
+      
+    </div>
+    <div class="ven n" style="justify-items: center; text-align: center; align-items: center;">
+      <p style="font-size: 20px;font-weight: lighter;">Vendedor estas en <b>Binary Shop</b>, esperamos disfrutes tu experiencia con nosotros.</p><br><br>
+      <div class="container">
+        <h1>Añadir un Artículo</h1>
+        <form id="itemForm">
+            <div class="form-group">
+                <input type="file" id="imageInput" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="itemDescription" placeholder="Título del artículo" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="itemPrice" placeholder="Precio del artículo" required>
+            </div>
+            <button type="submit">Subir Artículo</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    </div>
+    <div class="containerroot fi">
+      <h1>Gestión de Artículos y Usuarios</h1>
+      <div class="button-container">
+          <button id="btnArticulos">Gestionar Artículos</button>
+          <button id="btnUsuarios">Gestionar Usuarios</button>
+      </div>
+      <div id="listContainer" class="list-container"></div>
+  </div>
+  </section>
+  <script src="js/script1.js"></script>
+</body>
+</html>
